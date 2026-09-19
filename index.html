@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UPCYLO | Upcycle N' Splendor</title>
+  <meta name="description" content="UPCYLO turns discarded tyres, PVC pipes and other waste into furniture, lighting and decor. Made in Nigeria. Order on WhatsApp.">
+  <meta name="theme-color" content="#20bf55">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- Fonts: General Sans -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome icons -->
+  <script src="https://kit.fontawesome.com/4f82f7d87a.js" crossorigin="anonymous"></script>
+
+  <!-- Site styles -->
+  <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+  <a class="visually-hidden-focusable" href="#main">Skip to content</a>
+  <div class="frame">
+
+    <header class="site-nav">
+      <nav class="navbar navbar-expand-lg p-0" aria-label="Main">
+        <div class="container">
+          <a class="brand" href="index.html" aria-label="UPCYLO home">
+            <span class="brand__mark"><i class="fa-solid fa-recycle"></i></span>UPCYLO
+          </a>
+          <button class="navbar-toggler border-0 shadow-none px-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu">
+            <i class="fa-solid fa-bars fs-4"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-3 mb-lg-0 gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="how-it-works.html">How it's made</a></li>
+          <li class="nav-item"><a class="nav-link" href="workshops.html">Workshops</a></li>
+          <li class="nav-item"><a class="nav-link" href="custom-orders.html">Custom orders</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <a class="btn btn-upc btn-ink" data-wa data-wa-text="Hi UPCYLO, I have a question." href="#"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <a class="pill" href="how-it-works.html">Made from waste, built in Nigeria <i class="fa-solid fa-arrow-right"></i></a>
+          <h1 class="display mt-4 mb-4">Upcycle N' Splendor</h1>
+          <p class="hero__lead mx-auto">UPCYLO turns discarded tyres, PVC pipes and other waste into furniture, lighting and decor you'll actually want in your space.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+            <a class="btn btn-upc btn-green" href="products.html">Browse products <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-upc btn-ghost" data-wa data-wa-text="Hi UPCYLO, I'd like to place an order." href="#"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="container mt-5">
+          <div class="row g-3">
+            <div class="col-lg-5">
+              <figure class="media-card">
+                <!-- change this image to: a photo of the raw tyres waiting at the workshop or collection point -->
+                <img src="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=1000&q=75" alt="Piles of discarded tyres">
+                <figcaption class="media-chip">
+                  <span class="media-chip__label">Where it starts</span>
+                  <strong>Discarded tyres</strong>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-7">
+              <figure class="media-card">
+                <!-- change this image to: the finished Tyre Chair photo from the catalogue (product 7) -->
+                <img src="img/tyre-chair.webp" alt="A chair made from stacked tyres" class="img-focus-upper">
+                <div class="float-card">
+                  <div class="float-card__label">Where it ends up</div>
+                  <h3>Tyre Chairs</h3>
+                  <p>A chair made entirely of tyre.</p>
+                  <a href="product.html?p=tyre-chairs">See the piece</a>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Materials strip -->
+      <section class="material-strip">
+        <div class="container">
+          <p>Everything we make starts as one of these:</p>
+          <div class="chip-row">
+            <span class="material-chip">Tyres</span>
+            <span class="material-chip">PVC pipes</span>
+            <span class="material-chip">Cartons</span>
+            <span class="material-chip">Aluminium</span>
+            <span class="material-chip">Paper cups</span>
+            <span class="material-chip">Copper wire</span>
+            <span class="material-chip">Plastic spoons</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured products (rendered from js/products.js) -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2 class="h-section">Some of what we make</h2>
+              <p>Every piece starts as waste and is built to be used, from centre tables to sinks.</p>
+            </div>
+            <a class="link-arrow" href="products.html">See all products <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="row g-4" id="featured-products">
+            <noscript><div class="col-12"><a href="products.html">See the full catalogue</a></div></noscript>
+          </div>
+        </div>
+      </section>
+
+      <!-- Where it fits -->
+      <section class="section pt-0">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-5">
+              <h2 class="h-section">Made for the places you spend time</h2>
+              <p class="text-muted-ink mt-3 mb-4">Homes, classrooms, offices, restaurants, places of worship and gardens all need furniture and storage. We build for every one of them.</p>
+              <a class="link-arrow" href="custom-orders.html">Get something made for your space <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="col-lg-7">
+              <div class="place-grid">
+                <div class="place-tile"><i class="fa-solid fa-house"></i>Homes</div>
+                <div class="place-tile"><i class="fa-solid fa-school"></i>Schools</div>
+                <div class="place-tile"><i class="fa-solid fa-building"></i>Offices</div>
+                <div class="place-tile"><i class="fa-solid fa-utensils"></i>Restaurants</div>
+                <div class="place-tile"><i class="fa-solid fa-place-of-worship"></i>Places of worship</div>
+                <div class="place-tile"><i class="fa-solid fa-seedling"></i>Gardens</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to order -->
+      <section class="section pt-0">
+        <div class="container">
+          <div class="panel-mint">
+            <div class="panel-mint__head text-center mx-auto mb-5">
+              <h2 class="h-section">Ordering is one message away</h2>
+              <p class="text-muted-ink mt-3 mb-0">No cart and no checkout. Tell us what you want and we'll work out the details together.</p>
+            </div>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="step-card">
+                  <div class="step-card__num">1</div>
+                  <h3>Pick a piece</h3>
+                  <p>Browse the catalogue, or tell us what you have in mind.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="step-card">
+                  <div class="step-card__num">2</div>
+                  <h3>Send an enquiry</h3>
+                  <p>Fill in a short form or message us on WhatsApp.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="step-card">
+                  <div class="step-card__num">3</div>
+                  <h3>We take it from there</h3>
+                  <p>We reply with the details and the next steps.</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mt-5">
+              <a class="btn btn-upc btn-ink" href="products.html">Browse products</a>
+              <a class="btn btn-upc btn-light-upc" data-wa data-wa-text="Hi UPCYLO, I'd like to place an order." href="#"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Numbers 
+      <section class="section pt-0">
+        <div class="container">
+          <div class="stat-split">
+            <div class="stat-split__dark">
+              <div class="stat-number">6</div>
+              <p>waste materials we turn into products people want to own.</p>
+            </div>
+            <div class="stat-split__light">
+              <p class="stat-statement">We build it here, so it costs less than imported decor and fits the way we actually live.</p>
+              <div class="mini-stats">
+                <div><strong>16</strong><span>designs in the catalogue</span></div>
+                <div><strong>6</strong><span>steps from junkyard to finished piece</span></div>
+              </div>
+              <div class="mini-cta">
+                <div>
+                  <strong>Want something that isn't listed?</strong>
+                  <span>Tell us what you need and we'll see what we can build.</span>
+                </div>
+                <a class="btn btn-upc btn-green" data-wa data-wa-text="Hi UPCYLO, I'm looking for something I couldn't find in the catalogue." href="#"><i class="fa-brands fa-whatsapp"></i> Ask us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Workshops teaser -->
+      <section class="section pt-0">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="split__media">
+                <!-- change this image to: a photo from a real UPCYLO workshop session -->
+                <img src="img/learn-to-upcycle.webp" alt="A person working with a tool" loading="lazy">
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+              <h2 class="h-section">Learn to upcycle with us</h2>
+              <p class="text-muted-ink mt-3 mb-4">Our workshops explain why recycling and upcycling matter, then put real materials and tools in your hands so you can try it yourself.</p>
+              <a class="btn btn-upc btn-ink" href="workshops.html">Book a workshop</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Custom order CTA -->
+      <section class="section pt-0 pb-0">
+        <div class="container">
+          <div class="cta-band">
+            <h2 class="h-section">Got something specific in mind?</h2>
+            <p>Tell us the material, the space and the size. We'll design it and build it.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a class="btn btn-upc btn-green" href="custom-orders.html">Start a custom order</a>
+              <a class="btn btn-upc btn-ghost" data-wa data-wa-text="Hi UPCYLO, I'd like a custom piece made." href="#"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <a class="brand" href="index.html" aria-label="UPCYLO home">
+              <span class="brand__mark"><i class="fa-solid fa-recycle"></i></span>UPCYLO
+            </a>
+            <p class="footer-tagline">Upcycle N' Splendor</p>
+            <p class="footer-blurb mb-0">Furniture, lighting and decor made from tyres, PVC pipes and other waste, built in Nigeria.</p>
+          </div>
+          <div class="col-6 col-lg-3 offset-lg-1">
+            <h2 class="footer-title">Explore</h2>
+            <ul class="footer-links">
+              <li><a href="products.html">Products</a></li>
+              <li><a href="how-it-works.html">How it's made</a></li>
+              <li><a href="workshops.html">Workshops</a></li>
+              <li><a href="custom-orders.html">Custom orders</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h2 class="footer-title">Get in touch</h2>
+            <ul class="footer-contact">
+              <li><i class="fa-brands fa-whatsapp"></i><a data-wa href="#">WhatsApp us</a></li>
+              <li><i class="fa-solid fa-phone"></i><a data-phone="0" href="#">+234-8078938150</a></li>
+              <li><i class="fa-solid fa-phone"></i><a data-phone="1" href="#">+234-8103796274</a></li>
+              <li><i class="fa-solid fa-envelope"></i><a data-email="text" href="#">Upcyclensplendor@yahoo.com</a></li>
+              <!-- Add social media links here when the client shares them -->
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">&copy; <span data-year>2026</span> UPCYLO. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+
+  <a class="wa-float" data-wa data-wa-text="Hi UPCYLO, I'd like to make an enquiry." href="#" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -25,7 +25,7 @@ const PRODUCTS = [
     where: "Living rooms",
     featured: true,
     // change this image to: the double deck ottoman centre table photo from the catalogue (product 1)
-    image: "../img/tyre-coffee-table.webp",
+    image: "img/tyre-coffee-table.webp",
   },
   {
     slug: "toy-storage",
@@ -37,7 +37,7 @@ const PRODUCTS = [
     where: "Kids' rooms",
     featured: false,
     // change this image to: the tyre toy storage shelf photo from the catalogue (product 2)
-    image: "../img/tyre-toy.webp",
+    image: "img/tyre-toy.webp",
   },
   {
     slug: "tyre-planters",
@@ -49,7 +49,7 @@ const PRODUCTS = [
     where: "Gardens and homes",
     featured: true,
     // change this image to: the painted tyre planters photo from the catalogue (product 3)
-    image: "../img/tyre-planters.webp",
+    image: "img/tyre-planters.webp",
   },
   {
     slug: "pvc-pipe-lamps",
@@ -61,7 +61,7 @@ const PRODUCTS = [
     where: "Reading corners",
     featured: true,
     // change this image to: the blue PVC pipe reading lamp photo from the catalogue (product 4)
-    image: "../img/lamp.webp",
+    image: "img/lamp.webp",
   },
   {
     slug: "tyre-lamp",
@@ -73,7 +73,7 @@ const PRODUCTS = [
     where: "Bedrooms",
     featured: false,
     // change this image to: the glowing tyre bedside lamp photo from the catalogue (product 5)
-    image: "../img/tyre-lamp.webp",
+    image: "img/tyre-lamp.webp",
   },
   {
     slug: "shoe-rack",
@@ -85,7 +85,7 @@ const PRODUCTS = [
     where: "Homes",
     featured: false,
     // change this image to: the tyre shoe rack photo from the catalogue (product 6)
-    image: "../img/tyre-shoe-rack.webp",
+    image: "img/tyre-shoe-rack.webp",
   },
   {
     slug: "tyre-chairs",
@@ -97,7 +97,7 @@ const PRODUCTS = [
     where: "Homes",
     featured: true,
     // change this image to: the black tyre chair photo from the catalogue (product 7)
-    image: "../img/tyre-chair.webp",
+    image: "img/tyre-chair.webp",
   },
   {
     slug: "tyre-baskets",
@@ -109,7 +109,7 @@ const PRODUCTS = [
     where: "Storing and carrying produce",
     featured: false,
     // change this image to: the black tyre baskets photo from the catalogue (product 8)
-    image: "../img/tyre-baskets.webp",
+    image: "img/tyre-baskets.webp",
   },
   {
     slug: "tyre-mirror",
@@ -121,7 +121,7 @@ const PRODUCTS = [
     where: "Bedrooms and bathrooms",
     featured: true,
     // change this image to: the round tyre-tread mirror photo from the catalogue (product 9)
-    image: "../img/tyre-mirror.webp",
+    image: "img/tyre-mirror.webp",
   },
   {
     slug: "umbrella-holder",
@@ -133,7 +133,7 @@ const PRODUCTS = [
     where: "Homes and offices",
     featured: false,
     // change this image to: the blue tyre umbrella holder photo from the catalogue (product 10)
-    image: "../img/tyre-umbrella.webp",
+    image: "img/tyre-umbrella.webp",
   },
   {
     slug: "ottoman-coffee-table",
@@ -145,7 +145,7 @@ const PRODUCTS = [
     where: "Living rooms",
     featured: false,
     // change this image to: the ottoman coffee table with glass top photo from the catalogue (product 11)
-    image: "../img/tyre-table2.webp",
+    image: "img/tyre-table2.webp",
   },
   {
     slug: "plastic-spoon-decor",
@@ -157,7 +157,7 @@ const PRODUCTS = [
     where: "Homes",
     featured: false,
     // change this image to: the white plastic spoon hanging decor photo from the catalogue (product 12)
-    image: "../img/tyre-spoon.webp",
+    image: "img/tyre-spoon.webp",
   },
   {
     slug: "bicycle-tyre-coffee-table",
@@ -169,7 +169,7 @@ const PRODUCTS = [
     where: "Living rooms",
     featured: true,
     // change this image to: the bicycle wheel glass-top coffee table photo from the catalogue (product 13)
-    image: "../img/tyre-bicycle-table.webp",
+    image: "img/tyre-bicycle-table.webp",
   },
   {
     slug: "tyre-sink",
@@ -181,7 +181,7 @@ const PRODUCTS = [
     where: "Bathrooms",
     featured: false,
     // change this image to: the stacked tyre sink with storage photo from the catalogue (product 14)
-    image: "../img/tyre-sink.webp",
+    image: "img/tyre-sink.webp",
   },
   {
     slug: "tyre-seat-with-storage",
@@ -193,7 +193,7 @@ const PRODUCTS = [
     where: "Homes",
     featured: false,
     // change this image to: the blue and white tyre seat with storage photo from the catalogue (product 15)
-    image: "../img/tyre-storage.webp",
+    image: "img/tyre-storage.webp",
   },
   {
     slug: "pvc-pipe-storage-rack",
@@ -205,6 +205,6 @@ const PRODUCTS = [
     where: "Homes and workshops",
     featured: false,
     // change this image to: the white PVC pipe storage rack photo from the catalogue (product 16)
-    image: "../img/tyre-pipe-storage.webp",
+    image: "img/tyre-pipe-storage.webp",
   },
 ];

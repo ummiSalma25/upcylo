@@ -1,0 +1,263 @@
+/* ==========================================================
+   UPCYLO: inner pages
+   Loaded on every page except the home page, after index.css.
+   Holds page headers, filters, forms, product detail,
+   the process timeline, FAQ and contact blocks.
+   ========================================================== */
+
+/* ---------- Page header ---------- */
+
+.page-head {
+  position: relative;
+  padding: clamp(3rem, 6vw, 5rem) 0 clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.crumbs { font-size: 0.9rem; color: var(--muted); margin-bottom: 1.1rem; }
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--ink); text-decoration: underline; }
+
+.h-page {
+  font-size: clamp(2.75rem, 6.5vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.lead-muted { color: var(--muted); font-size: 1.15rem; max-width: 38rem; margin: 1.25rem 0 0; }
+
+/* ---------- Product filters ---------- */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+.filter-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.filter-btn {
+  padding: 0.5rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.filter-btn:hover { border-color: var(--ink); }
+.filter-btn[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+
+.filter-material { display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem; color: var(--muted); }
+.filter-material .form-select { width: auto; min-width: 11rem; }
+
+.result-count { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
+
+.empty-state {
+  padding: 3rem 1.5rem;
+  border-radius: var(--r-md);
+  background: var(--cream);
+  text-align: center;
+}
+.empty-state p { max-width: 28rem; margin: 0.5rem auto 1.25rem; color: var(--muted); }
+
+/* ---------- Forms ---------- */
+
+.form-card {
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: #fff;
+}
+
+.form-label { font-weight: 600; font-size: 0.92rem; margin-bottom: 0.4rem; }
+.form-text-optional { font-weight: 400; color: var(--muted); }
+
+.form-control,
+.form-select {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background-color: var(--paper);
+  color: var(--ink);
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--azure);
+  background-color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(11, 79, 108, 0.18);
+}
+textarea.form-control { min-height: 8rem; }
+
+.form-status:not(:empty) { margin-top: 1.25rem; }
+
+/* ---------- Product detail ---------- */
+
+.detail-media {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--cream);
+}
+.detail-media img { width: 100%; height: 100%; object-fit: cover; }
+
+.detail-info { position: sticky; top: 6rem; }
+@media (max-width: 991.98px) { .detail-info { position: static; } }
+
+.detail-title { font-size: clamp(2.4rem, 5vw, 3.75rem); margin: 0.9rem 0 0.75rem; }
+
+.detail-facts { list-style: none; margin: 1.5rem 0; padding: 0; }
+.detail-facts li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.detail-facts li span { color: var(--muted); }
+
+/* ---------- Process timeline ---------- */
+
+.timeline { list-style: none; margin: 0; padding: 0; }
+
+.timeline__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.25rem 1fr;
+  gap: 1.25rem;
+  padding-bottom: 2.25rem;
+}
+.timeline__item:last-child { padding-bottom: 0; }
+
+.timeline__item::before {
+  content: "";
+  position: absolute;
+  left: 1.625rem;
+  top: 3.25rem;
+  bottom: 0.25rem;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--line);
+}
+.timeline__item:last-child::before { display: none; }
+
+.timeline__num {
+  display: grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+.timeline__item h3 { font-size: 1.3rem; font-weight: 600; margin: 0.6rem 0 0.35rem; }
+.timeline__item p { margin: 0; color: var(--muted); max-width: 34rem; }
+
+/* ---------- Material cards ---------- */
+
+.material-card {
+  height: 100%;
+  padding: 1.6rem;
+  border-radius: var(--r-md);
+  background: var(--cream);
+}
+.material-card h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.4rem; }
+.material-card p { margin: 0; color: var(--muted); }
+.material-card__icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 1.1rem;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--azure);
+  font-size: 1.1rem;
+}
+
+/* ---------- Simple feature blocks (about, workshops) ---------- */
+
+.feature { padding-top: 1.25rem; border-top: 2px solid var(--ink); height: 100%; }
+.feature h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.4rem; }
+.feature p { margin: 0; color: var(--muted); }
+
+.quote-block {
+  font-family: var(--font-serif);
+  font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+  line-height: 1.2;
+  color: var(--azure);
+  margin: 0;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--azure);
+  color: #fff;
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+}
+
+.founder-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border-radius: var(--r-lg);
+  background: var(--mint);
+}
+.founder-card h3 { font-size: 1.4rem; font-weight: 600; margin: 0; }
+.founder-card p { margin: 0.25rem 0 0; color: var(--muted); }
+
+/* ---------- FAQ (Bootstrap accordion, restyled) ---------- */
+
+.accordion {
+  --bs-accordion-bg: #fff;
+  --bs-accordion-border-color: var(--line);
+  --bs-accordion-border-radius: var(--r-md);
+  --bs-accordion-inner-border-radius: var(--r-md);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.2rem rgba(11, 79, 108, 0.18);
+  --bs-accordion-active-bg: var(--mint);
+  --bs-accordion-active-color: var(--ink);
+}
+.accordion-item { margin-bottom: 0.75rem; border-radius: var(--r-md) !important; overflow: hidden; }
+.accordion-button { font-weight: 600; padding: 1.1rem 1.35rem; }
+.accordion-body { color: var(--muted); padding: 0 1.35rem 1.25rem; }
+
+/* ---------- Contact ---------- */
+
+.contact-option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.4rem;
+  border-radius: var(--r-md);
+  background: var(--cream);
+  color: var(--ink);
+  text-decoration: none;
+}
+.contact-option:hover { background: #ece0c4; color: var(--ink); }
+.contact-option i {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--azure);
+  font-size: 1.15rem;
+}
+.contact-option--wa { background: var(--green); }
+.contact-option--wa:hover { background: var(--green-press); }
+.contact-option--wa i { color: #fff; }
+.contact-option span { display: block; font-size: 0.88rem; opacity: 0.75; }
+.contact-option strong { display: block; font-size: 1.05rem; }
